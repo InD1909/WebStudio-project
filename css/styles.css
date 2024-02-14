@@ -7,6 +7,8 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 h1,
@@ -20,9 +22,10 @@ p {
 }
 
 .container {
-    max-width: 1158px;
+    /* max-width: 1158px; */
+    max-width: 320px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 
 
@@ -157,25 +160,32 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 188px 0;
-    max-width: 1440px;
+    /* padding: 188px 0; */
+    /* max-width: 1440px; */
+    max-width: 100%;
     margin: 0 auto;
+    padding: 72px 0;
 }
 
 .banner-header {
     color: #FFF;
     text-align: center;
-    font-size: 56px;
+    /* font-size: 56px; */
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 1.12px;
-    max-width: 496px;
+    /* line-height: 1.07; */
+    line-height: 1.11;
+    /* letter-spacing: 1.12px; */
+    letter-spacing: 0.02em;
+    /* max-width: 496px; */
+    max-width: 216px;
     padding: 0;
     margin: 0 auto;
+    text-transform: capitalize;
 }
 
-.button {
+.banner-button {
     cursor: pointer;
     background-color: #4D5AE5;
     color: #ffffff;
@@ -188,14 +198,15 @@ ul {
     border-radius: 4px;
     padding: 16px 32px;
     margin: 0 auto;
-    margin-top: 48px;
+    /* margin-top: 48px; */
+    margin-top: 72px;
     display: block;
     min-width: 169px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover,
-.button:focus {
+.banner-button:hover,
+.banner-button:focus {
     background-color: #404BBF;
 }
 
@@ -204,7 +215,8 @@ ul {
 
 .benefits {
     background-color: #FFF;
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 
 .visually-hidden {
@@ -222,7 +234,9 @@ ul {
 
 .benefits-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    gap: 72px;
 }
 
 .benefits-item-container {
@@ -231,7 +245,8 @@ ul {
     border-radius: 4px;
     width: 264px;
     height: 112px;
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
@@ -240,34 +255,40 @@ ul {
 .benefits-icon {}
 
 .benefits-item {
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
 }
 
 .benefits-inside-header {
     color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    /* font-size: 20px; */
+    /* font-weight: 500; */
+    /* line-height: 1.2; */
+    line-height: 1.11;
+    font-weight: 700;
     letter-spacing: 0.4px;
+    font-size: 36px;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .benefits-paragraph {
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
 }
 
 /* third section styles */
 
 .teams {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 
 .team-cards {
     background: #FFF;
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -286,14 +307,17 @@ ul {
     font-style: normal;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.72px;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    gap: 72px;
+    justify-content: center;
 }
 
 .team-inside-header {
@@ -352,8 +376,8 @@ ul {
 
 .portfolio {
     background-color: #FFF;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 
 .portfolio-header {
@@ -376,8 +400,9 @@ ul {
 
 .project-cards {
     background: var(--WHITE, #FFF);
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) / 3); */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 100%;
 }
 
 .project-cards:hover .project-cover-text {
@@ -444,11 +469,13 @@ ul {
 
 .footer {
     background-color: #2E2F42;
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    padding: 96px 0;
 }
 
 .logo-footer {
     color: #F4F4FD;
+    margin: 0 auto;
 }
 
 .footer-link {
@@ -472,14 +499,19 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px
+    max-width: 288px;
+    margin-bottom: 36px;
 }
 
 
 /* footer-social */
 
 .footer-soc-container {
-    margin-right: 80px;
+    /* margin-right: 80px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-soc-title {
@@ -489,6 +521,7 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    margin-top: 36px;
 }
 
 .footer-icon-list {
@@ -524,13 +557,21 @@ ul {
 .footer-container {
     display: flex;
     align-items: baseline;
+    flex-direction: column;
 }
 
 .footer-logo-container {
-    margin-right: 120px;
+    /* margin-right: 120px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer-input-container {}
+.footer-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .footer-input-paragraph {
     color: #ffffff;
@@ -538,18 +579,21 @@ ul {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
+    margin-top: 72px;
 }
 
 .footer-form {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    /* gap: 24px; */
 }
 
 .footer-label {}
 
 .footer-input {
-    width: 264px;
+    /* width: 264px; */
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -560,7 +604,8 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
-
+    opacity: 0.3;
+    margin: 16px 0;
 }
 
 .footer-form-btn {
@@ -580,6 +625,13 @@ ul {
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
+    max-width: 165px;
+    margin: 0 auto;
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background-color: #404BBF;
 }
 
 .footer-input-icon {
@@ -795,4 +847,147 @@ ul {
     background-color: #4D5AE5;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+    /* hero */
+
+    .banner-header {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
+
+    .banner {
+        padding: 112px 0;
+    }
+
+    .banner-button {
+        margin-top: 36px;
+    }
+
+    /* benefits */
+
+    .benefits {}
+
+    .benefits-list {
+        gap: 24px;
+        row-gap: 72px;
+    }
+
+    .benefits-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .benefits-inside-header {
+        text-align: start;
+    }
+
+    .benefits-paragraph {}
+
+    /* teams */
+
+    .team-list {
+        gap: 24px;
+        row-gap: 64px;
+    }
+
+    /* portfolio */
+
+    .portfolio-list {
+        row-gap: 72px;
+    }
+
+    .project-cards {
+        width: calc((100% - 24px) / 2);
+    }
+
+    /* footer */
+
+    .footer-container>.container {}
+
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+
+    /* hero */
+
+    .banner {
+        padding: 188px 0;
+    }
+
+    .banner-header {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
+
+    .banner-button {
+        margin-top: 48px;
+    }
+
+    /* benefits */
+
+    .benefits {
+        padding: 120px 0;
+    }
+
+    .benefits-list {
+        gap: 24px;
+        flex-wrap: nowrap;
+    }
+
+    .benefits-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .benefits-inside-header {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .benefits-paragraph {}
+
+    .benefits-item-container {
+        display: flex;
+    }
+
+    /* teams */
+
+    .teams {
+        padding: 120px 0;
+    }
+
+    .team-cards {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .team-list {
+        gap: 24px;
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+
+    /* portfolio */
+
+    .project-cards {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .portfolio {
+        padding: 120px 0;
+    }
+
+    .portfolio-list {
+        row-gap: 48px;
+    }
 }
