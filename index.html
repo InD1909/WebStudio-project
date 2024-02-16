@@ -86,12 +86,15 @@
           <address class="mob-address">
             <ul class="mob-address-menu">
               <li class="mob-address-item">
-                <a href="tel:+110001111111" class="mob-tel">
+                <a href="tel:+110001111111" class="mob-tel mob-active">
                   +11 (000) 111-11-11
                 </a>
               </li>
               <li>
-                <a href="mailto:info@devstudio.com" class="mob-contacts">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-contacts mob-active"
+                >
                   info@devstudio.com
                 </a>
               </li>
@@ -200,6 +203,7 @@
           <ul class="team-list">
             <li class="team-cards">
               <img
+                srcset="./images/Mark.jpg 1x, ./images/Mark-2x.jpg 2x"
                 src="./images/Mark.jpg"
                 alt="photo of man"
                 width="264"
@@ -242,6 +246,7 @@
             </li>
             <li class="team-cards">
               <img
+                srcset="./images/Tom.jpg 1x, ./images/Tom-2x.jpg 2x"
                 src="./images/Tom.jpg"
                 alt="photo of man"
                 width="264"
@@ -284,6 +289,7 @@
             </li>
             <li class="team-cards">
               <img
+                srcset="./images/Camila.jpg 1x, ./images/Camila-2x.jpg 2x"
                 src="./images/Camila.jpg"
                 alt="photo of a woman"
                 width="264"
@@ -326,6 +332,7 @@
             </li>
             <li class="team-cards">
               <img
+                srcset="./images/Daniel.jpg 1x, ./images/Daniel-2x.jpg 2x"
                 src="./images/Daniel.jpg"
                 alt="photo of a man"
                 width="264"
@@ -376,12 +383,35 @@
           <ul class="portfolio-list">
             <li class="project-cards">
               <div class="project-cover-wrap">
-                <img
-                  src="./images/project1.jpg"
-                  alt="photo of project 1"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/project1.jpg    1x,
+                      ./images/project1-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/project1-tab.jpg    1x,
+                      ./images/project1-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/project1-mob.jpg    1x,
+                      ./images/project1-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/project1.jpg"
+                    alt="photo of project 1"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="project-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -395,12 +425,35 @@
             </li>
             <li class="project-cards">
               <div class="project-cover-wrap">
-                <img
-                  src="./images/project2.jpg"
-                  alt="photo of project 2"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/project2.jpg    1x,
+                      ./images/project2-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/project2-tab.jpg    1x,
+                      ./images/project2-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/project2-mob.jpg    1x,
+                      ./images/project2-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/project2.jpg"
+                    alt="photo of project 2"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="project-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -414,12 +467,35 @@
             </li>
             <li class="project-cards">
               <div class="project-cover-wrap">
-                <img
-                  src="./images/project3.jpg"
-                  alt="photo of project 3"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/project3.jpg    1x,
+                      ./images/project3-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/project3-tab.jpg    1x,
+                      ./images/project3-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/project3-mob.jpg    1x,
+                      ./images/project3-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/project3.jpg"
+                    alt="photo of project 3"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="project-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -433,12 +509,35 @@
             </li>
             <li class="project-cards">
               <div class="project-cover-wrap">
-                <img
-                  src="./images/project4.jpg"
-                  alt="photo of project 4"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/project4.jpg    1x,
+                      ./images/project4-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/project4-tab.jpg    1x,
+                      ./images/project4-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/project4-mob.jpg    1x,
+                      ./images/project4-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/project4.jpg"
+                    alt="photo of project 4"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="project-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -452,12 +551,35 @@
             </li>
             <li class="project-cards">
               <div class="project-cover-wrap">
-                <img
-                  src="./images/project5.jpg"
-                  alt="photo of project 5"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/project5.jpg    1x,
+                      ./images/project5-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/project5-tab.jpg    1x,
+                      ./images/project5-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/project5-mob.jpg    1x,
+                      ./images/project5-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/project5.jpg"
+                    alt="photo of project 5"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="project-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -471,12 +593,35 @@
             </li>
             <li class="project-cards">
               <div class="project-cover-wrap">
-                <img
-                  src="./images/project6.jpg"
-                  alt="photo of project 6"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/project6.jpg    1x,
+                      ./images/project6-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/project6-tab.jpg    1x,
+                      ./images/project6-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/project6-mob.jpg    1x,
+                      ./images/project6-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/project6.jpg"
+                    alt="photo of project 6"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="project-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -492,7 +637,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-container">
@@ -557,7 +701,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="modal-container">
+    <div class="modal-container">
       <div class="modal-window">
         <button type="button" class="modal-btn">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -625,19 +769,23 @@
               class="form-check visually-hidden"
               name="user-privacy"
             />
-            <label for="user-privacy" class="check-text"
-              ><span class="user-span"
-                ><svg width="10" height="8" class="check-icon">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a href="" class="check-link">Privacy Policy</a>
+            <label for="user-privacy" class="check-text">
+              <div>
+                <span class="user-span"
+                  ><svg width="10" height="8" class="check-icon">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                </span>
+              </div>
+              <div>
+                I accept the terms and conditions of the
+                <a href="" class="check-link">Privacy Policy</a>
+              </div>
             </label>
           </div>
           <button class="form-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
