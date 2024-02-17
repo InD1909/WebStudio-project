@@ -896,7 +896,7 @@ ul {
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
-
+    flex-shrink: 1;
 }
 
 .form-check:checked+.check-text .user-span {
