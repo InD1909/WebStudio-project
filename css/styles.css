@@ -110,6 +110,10 @@ ul {
     pointer-events: none;
 }
 
+.mob-menu-container {
+    margin-bottom: 50px;
+}
+
 .mob-menu-close-btn {
     width: 24px;
     height: 24px;
@@ -137,9 +141,7 @@ ul {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-list {
-    margin-bottom: 50px;
-}
+.mob-list {}
 
 .mob-item:not(:last-child) {
     margin-bottom: 40px;
@@ -636,6 +638,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 72px;
 }
 
 .footer-input-paragraph {
@@ -645,7 +648,7 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     /* margin-bottom: 16px; */
-    margin-top: 72px;
+
 }
 
 .footer-form {
@@ -654,7 +657,10 @@ ul {
     /* gap: 24px; */
 }
 
-.footer-label {}
+.footer-label {
+    margin: 16px 0;
+}
+
 
 .footer-input {
     /* width: 264px; */
@@ -670,7 +676,6 @@ ul {
     border-radius: 4px;
     color: #ffffff;
     opacity: 0.3;
-    margin: 16px 0;
 }
 
 .footer-form-btn {
@@ -1092,6 +1097,10 @@ ul {
         align-items: start;
     }
 
+    .footer-definition {
+        margin-bottom: 0;
+    }
+
     .footer-soc-container {
         flex-direction: column;
         align-items: start;
@@ -1109,6 +1118,15 @@ ul {
 
     .footer-input {
         width: 264px;
+    }
+
+    .footer-soc-title {
+        margin-top: 0;
+    }
+
+    .footer-label {
+        margin-top: 16px;
+        margin-bottom: 0;
     }
 
     /* modal */
@@ -1145,6 +1163,7 @@ ul {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        padding: 24px 0;
     }
 
     /* hero */
@@ -1152,6 +1171,7 @@ ul {
     .banner {
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/background-picture.jpg);
+        max-width: 1440px;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -1193,7 +1213,9 @@ ul {
         line-height: 1.2;
     }
 
-    .benefits-paragraph {}
+    .benefits-paragraph {
+        font-weight: 400;
+    }
 
     .benefits-item-container {
         display: flex;
@@ -1264,11 +1286,11 @@ ul {
 
     .footer-input-container {
         display: block;
+        margin-top: 0;
     }
 
     .footer-input-paragraph {
         margin-top: 0;
-        margin-bottom: 16px;
     }
 
     .footer-form {
