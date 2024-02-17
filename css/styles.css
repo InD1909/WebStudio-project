@@ -592,6 +592,7 @@ ul {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 36px;
 }
 
 .footer-soc-title {
@@ -601,7 +602,7 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-    margin-top: 36px;
+
 }
 
 .footer-icon-list {
@@ -1120,7 +1121,7 @@ ul {
         width: 264px;
     }
 
-    .footer-soc-title {
+    .footer-soc-container {
         margin-top: 0;
     }
 
@@ -1280,7 +1281,7 @@ ul {
         flex-direction: row;
     }
 
-    .footer-soc-title {
+    .footer-soc-container {
         margin-top: 0;
     }
 
